@@ -5,7 +5,7 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.example.pruebacontiempo.ui.game.GameViewModel" />
+            type="com.example.pruebacontiempo.ui.game.viewmodel.GameViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:id="@+id/single_name_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="@{viewmodel.name}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +25,7 @@
             android:id="@+id/single_desc_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="@{viewmodel.description}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/single_name_tv" />
@@ -34,7 +34,7 @@
             android:id="@+id/single_qua_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="@{viewmodel.qualification}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/single_desc_tv" />

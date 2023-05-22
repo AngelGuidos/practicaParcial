@@ -1,6 +1,5 @@
-package com.example.pruebacontiempo.ui.game
+package com.example.pruebacontiempo.ui.game.newgame
 
-import android.os.Binder
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -9,8 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.example.pruebacontiempo.R
 import com.example.pruebacontiempo.databinding.FragmentNewGameBinding
+import com.example.pruebacontiempo.ui.game.viewmodel.GameViewModel
 
 class NewGameFragment : Fragment() {
 

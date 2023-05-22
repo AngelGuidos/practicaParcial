@@ -5,12 +5,12 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.example.pruebacontiempo.ui.game.GameViewModel" />
+            type="com.example.pruebacontiempo.ui.game.viewmodel.GameViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.game.BillboardFragment" >
+        tools:context=".ui.game.billboard.BillboardFragment" >
 
         <TextView
             android:id="@+id/textView"
@@ -29,5 +29,17 @@
             android:src="@android:drawable/ic_input_add"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="409dp"
+            android:layout_height="654dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

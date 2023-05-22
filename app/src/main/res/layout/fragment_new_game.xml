@@ -5,12 +5,12 @@
     <data>
         <variable
             name="viewmodel"
-            type="com.example.pruebacontiempo.ui.game.GameViewModel" />
+            type="com.example.pruebacontiempo.ui.game.viewmodel.GameViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.game.NewGameFragment" >
+        tools:context=".ui.game.newgame.NewGameFragment" >
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"

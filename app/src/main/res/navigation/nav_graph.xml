@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/billboardFragment"
-        android:name="com.example.pruebacontiempo.ui.game.BillboardFragment"
+        android:name="com.example.pruebacontiempo.ui.game.billboard.BillboardFragment"
         android:label="fragment_billboard"
         tools:layout="@layout/fragment_billboard" >
         <action
@@ -24,7 +24,7 @@
         tools:layout="@layout/fragment_game" />
     <fragment
         android:id="@+id/newGameFragment"
-        android:name="com.example.pruebacontiempo.ui.game.NewGameFragment"
+        android:name="com.example.pruebacontiempo.ui.game.newgame.NewGameFragment"
         android:label="fragment_new_game"
         tools:layout="@layout/fragment_new_game" />
 </navigation>

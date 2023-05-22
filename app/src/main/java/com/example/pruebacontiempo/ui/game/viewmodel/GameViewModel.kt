@@ -1,6 +1,5 @@
-package com.example.pruebacontiempo.ui.game
+package com.example.pruebacontiempo.ui.game.viewmodel
 
-import android.text.Spannable.Factory
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.APPLICATION_KEY
@@ -53,6 +52,13 @@ class GameViewModel (private val repository: GameRepository): ViewModel() {
         clearData()
 
         status.value = GAME_CREATED
+    }
+
+    fun setSelected(game: GameModel){
+        clearData()
+        name.value = game.name
+        description.value = game.description
+        qualification.value = game.qualification
     }
 
     companion object{
