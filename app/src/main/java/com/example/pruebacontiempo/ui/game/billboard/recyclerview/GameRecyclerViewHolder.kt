@@ -4,7 +4,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.pruebacontiempo.data.model.GameModel
 import com.example.pruebacontiempo.databinding.FragmentNewGameBinding
 import com.example.pruebacontiempo.databinding.GameItemBinding
-import com.example.pruebacontiempo.generated.callback.OnClickListener
+//import com.example.pruebacontiempo.generated.callback.OnClickListener
 
 class GameRecyclerViewHolder(private val binding: GameItemBinding): RecyclerView.ViewHolder(binding.root) {
     fun bind(game: GameModel, clickListener: (GameModel)-> Unit){
